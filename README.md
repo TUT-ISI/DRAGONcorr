@@ -1,3 +1,34 @@
+# MODIS aerosol optical depth spatial downscaling and post-process correction for the DRAGON campaign 2011
+
+Scripts and codes to download and prepare the necessary data + run the spatial downscaling and post-process correction of MODIS aerosol optical depth (AOD) data for the DRAGON campaign 2011.
+
+* Codes are developed by: Finnish Meteorological Institute and University of Eastern Finland
+* Contact info: Antti Lipponen (antti.lipponen@fmi.fi)
+
+
+## Python environment
+To create a Python environment for the codes using Conda, first clone the repository, next go to the main directory and run:
+```
+conda env create -f environment.yml
+conda activate DRAGONenv
+```
+
+## Running the code
+
+First, you need to download and pre-process the MODIS and AERONET data. To download and pre-process:
+```
+./downloadprepare.sh
+```
+As the datasets are relatively large, the download may take hours.
+
+To run the actual downscaling and post-process correction model training and evaluation, run:
+```
+python runCorrection.py
+```
+
+## License
+
+```
 MIT License
 
 Copyright (c) 2022 Finnish Meteorological Institute and University of Eastern Finland
@@ -19,3 +50,4 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+```
