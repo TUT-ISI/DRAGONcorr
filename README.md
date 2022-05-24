@@ -1,5 +1,7 @@
 # MODIS aerosol optical depth spatial downscaling and post-process correction for the DRAGON campaign 2011
 
+[![DOI](https://zenodo.org/badge/495721657.svg)](https://zenodo.org/badge/latestdoi/495721657)
+
 Scripts and codes to download and prepare the necessary data + run the spatial downscaling and post-process correction of MODIS aerosol optical depth (AOD) data for the DRAGON campaign 2011.
 
 * Codes are developed by: Finnish Meteorological Institute and University of Eastern Finland
